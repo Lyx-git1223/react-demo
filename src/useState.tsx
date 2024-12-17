@@ -8,7 +8,7 @@ function App() {
     }
   })
 
-  const heandleClick = () => {
+  const handleClick = () => {
     setUser({
       ...lyx,
       age:25
@@ -26,7 +26,7 @@ function App() {
   const [index,setIndex] = useState(0);
   return (
     <>
-      <button onClick={heandleClick}>更改值</button>
+      <button onClick={handleClick}>更改值</button>
       <div>姓名：{lyx.name}</div>
       <div>年龄：{lyx.age}</div>
       <div>{index}</div>
